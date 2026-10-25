@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Forecaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="weather-app.css">
+</head>
+<body>
+
+  <!-- Drifting clouds (decoration only) -->
+  <div class="sky" aria-hidden="true">
+    <span class="cloud cloud--1"></span>
+    <span class="cloud cloud--2"></span>
+    <span class="cloud cloud--3"></span>
+  </div>
+
+  <main class="weather">
+
+    <header class="weather__header">
+      <h1 class="weather__title">Weather Forecaster</h1>
+      <div class="units" role="group" aria-label="Temperature unit">
+        <button type="button" class="units__btn" data-unit="c" aria-pressed="true">°C</button>
+        <button type="button" class="units__btn" data-unit="f" aria-pressed="false">°F</button>
+      </div>
+    </header>
+
+    <form class="search" id="search-form" autocomplete="off" novalidate>
+      <label class="sr-only" for="city">City name</label>
+      <input class="search__input" id="city" type="search" placeholder="Search for a city" maxlength="80">
+      <button class="btn btn--primary" type="submit">Search</button>
+      <button class="btn btn--ghost" type="button" id="locate">Use my location</button>
+    </form>
+
+    <ul class="matches" id="matches" aria-label="Matching places" hidden></ul>
+
+    <p class="status" id="status" role="status">Search for a city to see its weather.</p>
+
+    <section class="now" id="now" aria-live="polite" hidden>
+      <div class="now__place">
+        <h2 class="now__city" id="place-name"></h2>
+        <p class="now__region" id="place-region"></p>
+        <p class="now__time" id="place-time"></p>
+      </div>
+
+      <div class="now__main">
+        <div class="now__icon" id="now-icon" aria-hidden="true"></div>
+        <div>
+          <p class="now__temp" id="now-temp"></p>
+          <p class="now__label" id="now-label"></p>
+        </div>
+      </div>
+
+      <dl class="stats">
+        <div class="stats__item"><dt>Feels like</dt><dd id="stat-feels"></dd></div>
+        <div class="stats__item"><dt>Humidity</dt><dd id="stat-humidity"></dd></div>
+        <div class="stats__item"><dt>Wind</dt><dd id="stat-wind"></dd></div>
+        <div class="stats__item"><dt>Chance of rain today</dt><dd id="stat-rain"></dd></div>
+      </dl>
+    </section>
+
+    <section class="forecast" id="forecast" aria-labelledby="forecast-title" hidden>
+      <h2 class="forecast__title" id="forecast-title">Next 5 days</h2>
+      <ul class="days" id="days"></ul>
+    </section>
+
+    <footer class="weather__footer">
+      Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+    </footer>
+
+  </main>
+
+  <script src="weather-app.js"></script>
+</body>
+</html>
