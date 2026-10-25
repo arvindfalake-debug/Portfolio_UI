@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="todo-list.css">
+</head>
+<body>
+  <main class="todo">
+
+    <header class="todo__header">
+      <div>
+        <h1 class="todo__title">My tasks</h1>
+        <p class="todo__date" id="today"></p>
+      </div>
+      <p class="todo__summary" id="summary" aria-live="polite"></p>
+    </header>
+
+    <form class="add-form" id="add-form" autocomplete="off">
+      <label class="sr-only" for="new-task">New task</label>
+      <input class="add-form__text" id="new-task" type="text" maxlength="120" placeholder="What needs to be done?">
+
+      <label class="sr-only" for="new-priority">Priority</label>
+      <select class="add-form__priority" id="new-priority">
+        <option value="high">High</option>
+        <option value="medium" selected>Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <button class="btn btn--primary" type="submit">Add task</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Show tasks">
+      <button type="button" class="filters__btn" data-filter="all"    aria-pressed="true">All <span class="filters__count" id="count-all">0</span></button>
+      <button type="button" class="filters__btn" data-filter="active" aria-pressed="false">To do <span class="filters__count" id="count-active">0</span></button>
+      <button type="button" class="filters__btn" data-filter="done"   aria-pressed="false">Done <span class="filters__count" id="count-done">0</span></button>
+    </div>
+
+    <ul class="tasks" id="task-list"></ul>
+
+    <p class="empty" id="empty" hidden></p>
+
+    <footer class="todo__footer">
+      <p class="todo__hint">Tasks are saved in this browser.</p>
+      <button type="button" class="btn btn--quiet" id="clear-done">Clear completed</button>
+    </footer>
+
+    <div class="toast" id="toast" role="status" hidden>
+      <span id="toast-text"></span>
+      <button type="button" class="toast__undo" id="toast-undo">Undo</button>
+    </div>
+
+  </main>
+
+  <script src="todo-list.js"></script>
+</body>
+</html>

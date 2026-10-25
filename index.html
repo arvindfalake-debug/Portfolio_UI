@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arvind | Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="splash" role="presentation"><small>- WELCOME -</small><h1>ARVIND</h1><p>FRONTEND DEVELOPER</p></div>
+
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#home" data-go="home">Arvind</a>
+  <nav class="links" id="links" aria-label="Main">
+   <a href="#home" data-go="home">Home</a><a href="#about" data-go="about">About</a><a href="#skills" data-go="skills">Skills</a><a href="#projects" data-go="projects">Projects</a><a href="#contact" data-go="contact">Contact</a>
+  </nav>
+  <div class="tools"><button id="pal" type="button" aria-expanded="false" aria-controls="palpanel" aria-haspopup="true"><i class="pdot" aria-hidden="true"></i><span class="lbl">Colours</span></button><button id="theme" type="button" aria-label="Switch light and dark mode">Dark</button><button id="menu" type="button" aria-expanded="false" aria-controls="links">Menu</button></div>
+ </div>
+<div id="prog"></div>
+ <div class="pnl" id="palpanel" role="dialog" aria-label="Colour theme" hidden>
+  <h2>Colour theme</h2><p>Pick a palette. It works with Light and Dark mode.</p>
+  <div class="opts" id="opts" role="radiogroup" aria-label="Palette"></div>
+ </div>
+</header>
+
+<main>
+<section id="home" class="wrap hero">
+ <div>
+  <h1>Hi, I’m <span class="acc">Arvind</span></h1>
+  <p class="role" aria-label="Frontend Developer"><span id="typed" aria-hidden="true">Frontend Developer</span><i class="caret" aria-hidden="true"></i></p>
+  <p class="tag">I build clean, fast and easy-to-use websites.</p>
+  <p class="lead">Creative frontend developer obsessed with clean code, smooth animations and seamless user journeys.</p>
+  <div class="row"><a class="btn p" href="#projects" data-go="projects">View work</a><a class="btn" href="resume.pdf" download>Download resume</a></div>
+  <div class="row soc"><a class="ic" href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="ic" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a class="ic" href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></svg></a></div>
+ </div>
+ <div class="orb"><div class="orb-in"><img src="profile%20image.jpg" alt="Arvind, frontend developer" width="380" height="380" decoding="async" fetchpriority="high"></div></div>
+</section>
+
+<section id="about"><div class="wrap">
+ <span class="pill">About</span><h2>Hello<span>!</span></h2>
+ <div class="about">
+  <div class="lan"><div class="strap"></div>
+   <button id="badge" type="button" aria-pressed="false" aria-label="Arvind’s ID badge. Press to flip it and see quick facts.">
+    <span class="face front"><span class="ph"><img src="profile%20image.jpg" alt="Arvind" width="110" height="110" decoding="async"></span><strong>ARVIND</strong><em>Frontend Developer</em></span>
+    <span class="face back"><strong>Quick facts</strong><span>B.Tech student</span><span>HTML, CSS, JavaScript, React</span><span>Open to internships</span></span>
+   </button>
+   <p class="hint">Tap the badge to flip it</p></div>
+  <div class="txt">
+   <p class="intro">Hi, my name is Arvind. I care about building clear, useful and refined digital products.</p>
+   <p>I am interested in the space where thoughtful design and practical engineering meet. I like turning an early idea into a clear experience that feels useful, calm and intentional.</p>
+   <p>My approach is hands-on: understand the problem, shape the structure, build carefully and keep improving the details that make a product easier to use. I value readable work, strong collaboration and interfaces that communicate without unnecessary noise.</p>
+   <p>Outside the code itself, I enjoy the visual side of digital work: pacing, composition, motion and the small interactions that give a project its character.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <span class="pill">Technical Stack</span><h2>My <span>Skillset</span></h2>
+ <ul class="tiles">
+  <li><b style="--c:#E34F26">H5</b>HTML5</li><li><b style="--c:#1572B6">C3</b>CSS3</li><li><b style="--c:#F7DF1E;--t:#231108">JS</b>JavaScript</li><li><b style="--c:#61DAFB;--t:#231108">Re</b>React</li>
+  <li><b style="--c:#24292F">Gh</b>Git and GitHub</li><li><b style="--c:#A259FF">Fg</b>Figma</li><li><b style="--c:#00C4CC;--t:#231108">Ca</b>Canva</li><li><b style="--c:#007ACC">VS</b>VS Code</li>
+ </ul>
+ <span class="pill">Soft Skills</span><h2>Professional <span>Soft Skills</span></h2>
+ <div class="soft">
+  <article><span aria-hidden="true">⭐</span><h3>Leadership</h3><p>Guiding teams, managing tasks and driving projects to completion with a shared vision.</p></article>
+  <article><span aria-hidden="true">🎤</span><h3>Public speaking</h3><p>Confident stage presence, hosting summits and explaining technical ideas clearly.</p></article>
+  <article><span aria-hidden="true">🤝</span><h3>Team collaboration</h3><p>Collaborating across fields and building code in sync with the team.</p></article>
+  <article><span aria-hidden="true">💬</span><h3>Communication</h3><p>Clear, concise and structured communication in both business and technical settings.</p></article>
+  <article><span aria-hidden="true">🧩</span><h3>Problem solving</h3><p>Breaking complex engineering tasks into clean, logical and modular pieces.</p></article>
+  <article><span aria-hidden="true">🔄</span><h3>Adaptability</h3><p>Quick to pick up new tools such as FastAPI, Spring Boot or automation tools like n8n.</p></article>
+  <article><span aria-hidden="true">🎨</span><h3>Creativity</h3><p>Blending cinematic aesthetics with software structure to build premium experiences.</p></article>
+  <article><span aria-hidden="true">⏱️</span><h3>Time management</h3><p>Balancing B.Tech studies, event hosting and developing robust software platforms.</p></article>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <span class="pill">My Work</span><h2>My <span>Projects</span></h2>
+ <div class="grid3">
+  <article class="card"><div class="th t1" role="img" aria-label="Calculator preview"><div><i></i><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+   <div class="body"><h3>Calculator</h3><p>A responsive, browser-based calculator with a clean grid layout. It handles standard calculations and has a clear button.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+   <div class="row"><a class="btn p" href="https://github.com/yourusername/calculator" target="_blank" rel="noopener">Live demo</a><a class="btn" href="https://github.com/yourusername/calculator" target="_blank" rel="noopener">GitHub</a></div></div></article>
+  <article class="card"><div class="th t2" role="img" aria-label="To-do list preview"><div><p><u></u><s></s></p><p><u></u><s></s></p><p><u></u><s></s></p></div></div>
+   <div class="body"><h3>To-Do List</h3><p>A responsive web and mobile task manager. Create, edit, prioritise and delete daily tasks, and your list is saved in local storage.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+   <div class="row"><a class="btn p" href="https://github.com/yourusername/todo" target="_blank" rel="noopener">Live demo</a><a class="btn" href="https://github.com/yourusername/todo" target="_blank" rel="noopener">GitHub</a></div></div></article>
+  <article class="card"><div class="th t3" role="img" aria-label="Weather app preview"><svg viewBox="0 0 160 90"><rect width="160" height="90" fill="#9CD3FF"/><g fill="#fff"><circle cx="30" cy="62" r="18"/><circle cx="55" cy="55" r="22"/><circle cx="80" cy="64" r="16"/><rect x="14" y="62" width="82" height="16" rx="8"/><circle cx="118" cy="30" r="12"/><circle cx="134" cy="34" r="9"/><rect x="106" y="32" width="38" height="12" rx="6"/></g><text x="108" y="78" font-family="Arial" font-weight="700" font-size="16" fill="#231108">24°C</text></svg></div>
+   <div class="body"><h3>Weather Forecaster</h3><p>Search for a city and see its weather on a cloud-themed, responsive layout.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+   <div class="row"><a class="btn p" href="https://github.com/yourusername/weather" target="_blank" rel="noopener">Live demo</a><a class="btn" href="https://github.com/yourusername/weather" target="_blank" rel="noopener">GitHub</a></div></div></article>
+ </div>
+</div></section>
+
+<section id="certificates"><div class="wrap">
+ <span class="pill">Achievements</span><h2>My <span>Certificates</span></h2>
+ <div class="grid3">
+  <article class="card cert"><div class="cimg"><img alt="Code and Commit certificate" hidden></div><div class="body"><h3>Code and Commit</h3><p>[Add issuer and year]</p><div class="row"><button class="btn chg" type="button">Change image</button></div><input type="file" accept="image/*" hidden></div></article>
+  <article class="card cert"><div class="cimg"><img alt="IIC certificate" hidden></div><div class="body"><h3>IIC</h3><p>[Add issuer and year]</p><div class="row"><button class="btn chg" type="button">Change image</button></div><input type="file" accept="image/*" hidden></div></article>
+  <article class="card cert"><div class="cimg"><img alt="Kalpataru certificate" hidden></div><div class="body"><h3>Kalpataru</h3><p>[Add issuer and year]</p><div class="row"><button class="btn chg" type="button">Change image</button></div><input type="file" accept="image/*" hidden></div></article>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <span class="pill">Get in touch</span><h2>Contact <span>Me</span></h2>
+ <div class="contact">
+  <form id="form">
+   <div><label for="fn">Full name</label><input id="fn" placeholder="Enter your full name" required autocomplete="name"></div>
+   <div><label for="em">Email</label><input id="em" type="email" placeholder="you@example.com" required autocomplete="email"></div>
+   <div><label for="sb">Subject</label><input id="sb" placeholder="What is this about?" required></div>
+   <div><label for="ms">Message</label><textarea id="ms" placeholder="Write your message here..." required></textarea></div>
+   <div><button class="btn p" type="submit">Send message</button></div>
+   <p id="ok" role="status"></p>
+  </form>
+  <div class="direct">
+   <p style="margin:0">Have a project or an opportunity? Send me a message and I will reply within two days.</p>
+   <a href="mailto:arvind@example.com">arvind@example.com</a>
+   <div class="row soc"><a class="ic" href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="ic" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a class="ic" href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></svg></a></div>
+   
+  </div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Arvind. Built with HTML, CSS and JavaScript.</div></footer>
+<button id="totop" type="button" aria-label="Back to top">↑</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
